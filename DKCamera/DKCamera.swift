@@ -270,7 +270,7 @@ open class DKCamera: UIViewController {
         }
         
         if let stillImageOutput = self.stillImageOutput {
-            self.stillImageOutput = nil // Just taking only one image.
+            //self.stillImageOutput = nil // Just taking only one image.
             
             DispatchQueue.global().async(execute: {
                 if let connection = stillImageOutput.connection(withMediaType: AVMediaTypeVideo) {

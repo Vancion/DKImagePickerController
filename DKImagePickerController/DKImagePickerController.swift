@@ -346,7 +346,7 @@ open class DKImagePickerController : UINavigationController {
                      if success {
                          if let newAsset = PHAsset.fetchAssets(withLocalIdentifiers: [newImageIdentifier], options: nil).firstObject {
                              if self.sourceType != .camera || self.viewControllers.count == 0 {
-                                 self.dismiss(animated: true, completion: nil)
+                                 //self.dismiss(animated: true, completion: nil)
                              }
                              self.selectImage(DKAsset(originalAsset: newAsset))
                          }
