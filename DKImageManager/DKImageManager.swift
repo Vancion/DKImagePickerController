@@ -67,6 +67,7 @@ public class DKImageManager: DKBaseManager {
 	
 	private lazy var defaultImageRequestOptions: PHImageRequestOptions = {
 		let options = PHImageRequestOptions()
+		options.deliveryMode = .highQualityFormat
 		
 		return options
 	}()
